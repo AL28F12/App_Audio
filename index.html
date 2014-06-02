@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        
+        <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+        <link href="css/dino-theme.min.css" rel="stylesheet" href="css/mi estilo.css">
+<link rel="stylesheet" type="text/css" href="css/Tema1.min.css">
+    
+    <style>
+  .panel-content {
+    padding: 1em;
+  }
+
+
+
+  #vista
+  {
+	  position:absolute;
+	  left:30%;
+
+  }
+  
+  
+  #logo
+  {
+	  position:absolute;
+	  top:84px;
+	  left:10%;
+  }
+
+#vista img {
+    -webkit-transition:1s;
+			  opacity: 0;  
+}
+#vista img.clicked{
+     opacity:1.0;
+ }
+  
+  
+  #logo img {
+    -webkit-transition:1s;
+}
+#logo img.clicked{
+     opacity:0;
+ }
+
+  
+  </style>
+    
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/acciones.js"></script>        
+        
+
+
+
+        
+        <!-- necesario*/ -->
+    </head>
+    
+    <body>
+
+     
+
+           
+<div data-role="page" id="bienvenida" data-theme="a">
+
+	
+    <div data-role="content">	
+
+    <div id="logo" align="center" >
+<img src="imagenes/foursquare.png" width="82" height="82">
+    </div>
+    <div id="vista" align="center">
+<img src="imagenes/vinilo decorativo dj music.png" width="300" height="182">
+    </div>
+
+	<audio id="roar" preload="auto" src="audio/Steve Aoki  Feat. Angger Dimas - Steve Jobs.mp3">
+       </audio>
+    </div>
+    
+
+</div>
+
+
+    
+        <div data-role="page" id="principal" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>Introduccion (algunas de las mejores marcas) </h1>
+        <div align="center">
+        <a href="#defaultpanel" data-role="button" data-icon="myapp-rex" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+        
+	</div>
+    
+      
+
+
+     
+	<div data-role="content">	
+     <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+      <p> La música, "el arte de las musas" es, según la definición tradicional del término, el arte de organizar sensible y lógicamente una combinación coherente de sonidos y silencios utilizando los principios fundamentales de la melodía, la armonía y el ritmo, mediante la intervención de complejos procesos psico-anímicos. 
+      </p>
+      <div align="center"><img src="imagenes/logos.png" width="363" height="464"></div>
+     </div>
+	</div>
+    
+	<div data-role="footer" data-position="fixed">
+
+	</div>
+    
+<!-- Panel Menu  -->
+  <div data-role="panel" id="defaultpanel" data-theme="a" data-display="overlay">
+ 
+    <div class="panel-content" align="center">
+      <h3>Menú</h3>
+
+<img src="imagenes/foursquare.png" width="170" height="160">
+<div data-role="controlgroup">
+<a data-role="button" id="Denon" class="boton">Denon</a>
+<a data-role="button" id="Numark" class="boton">Numark</a> 
+<a data-role="button" id="Piooner" class="boton">Piooner</a>
+<a data-role="button" id="peavey" class="boton">Peavey</a>
+<a data-role="button" id="acercade" class="boton">Acerca de</a>
+</div>
+
+      <a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Cerrar</a>
+    </div><!-- /contenido del panel-->
+  </div><!-- /panel de menu -->
+    
+    
+</div>
+
+<div data-role="page" id="Denon" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>Denon</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+    <p>
+     Denon es un japonés de la electrónica compañía que participó en las primeras etapas de desarrollo de audio digital de tecnología, mientras que se especializa en la fabricación de alta fidelidad Equipos de audio profesional y de consumo. Durante muchas décadas, Denon era una marca de Nippon-Columbia , incluyendo el sello discográfico Nippon Columbia. En 2001 Denon se escindió como una empresa independiente con el 98% en manos de Ripplewood Holdings y un 2% por Hitachi . En 2002 se fusionó con Denon Marantz para formar D & M Holdings . La marca Denon provenía de una fusión de Den ki En kyo y otros en 1939.
+    </p>	
+    <div align="center"><img src="imagenes/denon-logo1.png" width="338" height="343"></div>
+    <div align="center"><img src="imagenes/denon-mc-3000-mixer-controlador-profesional-para-virtual-dj-12814-MLM20066950177_032014-F.png" width="636" height="700"></div>
+
+	</div>
+    </div>
+    
+	<div data-role="footer" data-position="fixed">
+
+		
+	</div>
+</div>
+
+<div data-role="page" id="Numark" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<h1>Numark Industries</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+    <p>
+     Numark Industries es una empresa global de equipamiento para DJ's. Esta empresa comercializa mesas de mezclas, turntables y mezcladores de CD. Actualmente, está introduciendo consolas mezcladoras de DVD. También ha empezado a establecerse mediante su propio software de mezclas, llamado Cue.
+
+Numark ha fundado una segunda marca, ION Audio y recientemente ha extendido su empresa con la adquisición de Alesis y Akai Professional.
+    </p>	
+    <div align="center">
+    <img src="imagenes/Numark Army Pin_inline.png" width="277" height="267"></div>
+    <div align="center">
+    <img src="imagenes/1356909631_468396529_2-Controlador-para-dj-numark-Gustavo-A-Madero.png" width="500" height="279"></div>
+	</div>
+    </div>
+	<div data-role="footer" data-position="fixed">
+
+		
+	</div>
+</div>
+
+<div data-role="page" id="Piooner" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>Piooner</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+    <p>
+    Pioneer Corporation es una empresa japonesa de tecnología. Se fundó en enero de 1938 como Fukuin Shokai Denki Seisakusho, cambiando su nombre en mayo de 1947. En marzo de 2006 tenía 38.900 empleados a nivel mundial.[cita requerida]
+
+Entre sus productos están equipos estéreo, navegadores GPS y altavoces para coche, equipos relacionados con tecnología láser, Laser Disc, Disco compacto, DVD, Blu-Ray y monitores como pantallas de plasma de alta definición. Fue la primera empresa en producir un monitor de alta definición completa (1.920 x 1.080) de 50".[cita requerida]. En años recientes esta marca se ha consolidado como líder en tecnología aplicada en equipos electrónicos para DJ´s
+    </p>	
+    <div align="center"><img src="imagenes/descarga.png" width="239" height="210"></div>
+    <div align="center"><img src="imagenes/pioneer-ddj-sz.png" width="682" height="290"></div>
+	</div>
+    </div>
+	<div data-role="footer" data-position="fixed">
+
+		
+	</div>
+</div>
+
+<div data-role="page" id="peavey" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<h1>Peavey</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+    <p>
+Peavey Electronics Corporation (Corporación Electrónica Peavey) es una de las más grandes fábricas de equipamiento de audio del mundo, tiene su sede en Meridian (Misisipi) en los Estados Unidos.
+Peavey posee actualmente 1,5 millones de pies cuadrados (140.000 m²) entre zonas de fabricación y montaje en más de 33 instalaciones en América del Norte, Europa y Asia, de los que 18 se encuentran en su estado natal de Mississippi. Los productos son fabricados principalmente en los Estados Unidos, el Reino Unido y el Lejano Oriente, y se distribuyen a 136 diferentes países en todo el mundo. También tiene 130 patentes, y una gama de productos de alrededor de 2000 diseños, con entre 80 y 100 que se añaden cada año.
+
+Peavey Electronics también es propietaria de 5 grandes marcas de electrónica, es decir, MediaMatrix, Acústica Arquitectónica, PVDJ, Crest Audio, y Trace Elliot, mientras se trabaja con un número de músicos famosos en la firma de instrumentos, amplificadores y otros equipos.
+    </p>	
+    <div align="center">
+    <img src="imagenes/1368552478_510386322_2-Fotos-de--De-ocacion-vendo-consola-peavey-de-24-canales.png" width="777" height="434">
+    </div>
+	</div>
+    </div>
+	<div data-role="footer" data-position="fixed">
+Erick Yamil Popoca Ramos
+	</div>
+</div>
+
+<div data-role="page" id="acercade" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<h1>Acerca De</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="center">
+    <p>
+Ingenieria:
+CBTis 16
+<br>
+<br>
+Administracion de Calidad:
+Profesor.Jose Couto Pelaez
+<br>
+<br>
+Directores jefe:
+Profesor.Jose Couto Pelaez
+<br>
+<br>
+Redaccion:
+Erick Yamil Popoca Ramos
+<br>
+<br>
+Administracion documental:
+Basado en informacion de la WEB
+<br>
+<br>
+Reconocimiento especial:
+Erick Yamil Popoca Ramos, por su gran desempeño academico XD.
+    </p>	
+    <div align="center">
+    <img src="imagenes/ANDROID-MUSIC-e1341527223157.png" width="239" height="210">
+    </div>
+	</div>
+    </div>
+	<div data-role="footer" data-position="fixed">
+
+		
+	</div>
+</div>
+
+
+    </body>
+
+</html>
